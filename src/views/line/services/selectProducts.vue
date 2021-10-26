@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="p-4 text-center">
-      <h1>เลือกบริการ</h1>
+      <h1 class="h1-laundry my-2">เลือกบริการ</h1>
 
       <button @click="$emit('changePage', 'selectCategory')">back</button>
 

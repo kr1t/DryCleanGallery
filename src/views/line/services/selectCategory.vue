@@ -1,16 +1,16 @@
 <template>
   <div class="container">
-    <div class="p-4 text-center">
-      <h1>เลือกบริการ</h1>
+    <div class="text-center">
+      <h1 class="h1-laundry my-3">เลือกบริการ</h1>
       <div class="row">
         <div class="col-6" v-for="category in categories" :key="category.id">
           <div class="card bg-primary">
             <div class="card-body" @click="setActive(category.id)">
-              <div>
+              <div class="img-category">
                 <img :src="category.image" alt="" />
               </div>
 
-              {{ category.title }}
+              <p class="title-category">{{ category.title }}</p>
             </div>
           </div>
         </div>
@@ -41,3 +41,32 @@ export default {
   },
 };
 </script>
+
+<style>
+.img-category img{
+  width: 110px;
+  height: 100px;
+  object-fit: cover;
+}
+.title-category{
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #fff;
+}
+.h1-laundry{
+  font-weight: 800;
+  color: #233aa6;
+}
+.card{
+  border-radius: 20px !important;
+  background-color: #183980 !important;
+  border: none;
+}
+.card-body{
+  border-radius: 20px !important;
+  background-color: #183980 !important;
+  border: none;
+}
+</style>

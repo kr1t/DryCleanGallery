@@ -5,13 +5,14 @@ import "firebase/firestore"
 export const db = !firebase.apps.length
   ? firebase
       .initializeApp({
-        apiKey: "AIzaSyA6rPeqjwM5VitsnU9cdxAQsX9azToW0i0",
-        authDomain: "vuefire-c0f73.firebaseapp.com",
-        databaseURL: "https://vuefire-c0f73.firebaseio.com",
-        projectId: "vuefire-c0f73",
-        storageBucket: "vuefire-c0f73.appspot.com",
-        messagingSenderId: "417551668035",
-        appId: "1:417551668035:web:7c3da2477047ba520a55f6",
+        apiKey: "AIzaSyAFS-HR7KqtB7C9qLpF56f-zl5jMiohNkI",
+        authDomain: "dryclean-gallery.firebaseapp.com",
+        databaseURL: "https://dryclean-gallery-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "dryclean-gallery",
+        storageBucket: "dryclean-gallery.appspot.com",
+        messagingSenderId: "738933738349",
+        appId: "1:738933738349:web:8a2777b16b1ec7fb9aa864",
+        measurementId: "G-V4H3PQX2N4",
       })
       .firestore()
   : firebase.app().firestore()
